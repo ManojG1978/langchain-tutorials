@@ -6,6 +6,8 @@ See the accompanying tutorials on [YouTube](https://www.youtube.com/channel/UCyR
 
 If you want to get updated when new tutorials are out, get them [delivered to your inbox](https://prodigious-knitter-7293.ck.page/3bd9b7cea6)
 
+If you're new to Jupyter Notebooks or Colab, check out [this video](https://www.youtube.com/watch?v=HW29067qVWk)
+
 ### **New To LangChain?**
 Recommended Learning Path:
 1. LangChain CookBook Part 1: 7 Core Concepts - [Code](https://github.com/gkamradt/langchain-tutorials/blob/main/LangChain%20Cookbook%20Part%201%20-%20Fundamentals.ipynb), [Video](https://youtu.be/2xxziIWmaSA)
@@ -15,6 +17,7 @@ Recommended Learning Path:
 Prompt Engineering (my favorite resources):
 1. [Prompt Engineering Overview](https://www.youtube.com/watch?v=dOxUroR57xs) by [Elvis Saravia](https://twitter.com/omarsar0)
 2. [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) - Prompt engineering basics straight from OpenAI
+3. [Brex's Prompt Engineering Guide](https://github.com/brexhq/prompt-engineering)
 
 ## 🤖 **Project Gallery**
 
@@ -94,7 +97,7 @@ Prompt Engineering (my favorite resources):
 
 ## 💁 Contributing
 
-As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of updating code, better documentation, or projec to feature.
+As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of updating code, better documentation, or project to feature.
 
 Submit a PR with notes.
 

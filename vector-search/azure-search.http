@@ -1,0 +1,70 @@
+PUT https://ncuseai-search-service.search.windows.net/indexes/langchain-vector-demo?api-version=2023-07-01-Preview
+Content-Type: application/json
+api-key: 5xhJ7SqM2gZcfaPGIUxDNLZDWmVrJh3n7seFut0Y9fAzSeBdtOEv
+
+{
+    "name": "langchain-vector-demo",
+    "fields": [
+        {
+            "name": "id",
+            "type": "Edm.String",
+            "key": true,
+            "filterable": true
+        },
+        {
+            "name": "category",
+            "type": "Edm.String",
+            "filterable": true,
+            "searchable": true,
+            "retrievable": true
+        },
+        {
+            "name": "title",
+            "type": "Edm.String",
+            "searchable": true,
+            "retrievable": true
+        },
+        {
+            "name": "titleVector",
+            "type": "Collection(Edm.Single)",
+            "searchable": true,
+            "retrievable": true,
+            "dimensions": 1536,
+            "vectorSearchConfiguration": "vectorConfig"
+        },
+        {
+            "name": "content",
+            "type": "Edm.String",
+            "searchable": true,
+            "retrievable": true
+        },
+        {
+            "name": "content_vector",
+            "type": "Collection(Edm.Single)",
+            "searchable": true,
+            "retrievable": true,
+            "dimensions": 1536,
+            "vectorSearchConfiguration": "vectorConfig"
+        },
+        {
+            "name": "metadata",
+            "type": "Edm.String",
+            "searchable": true,
+            "retrievable": true
+        }
+    ],
+    "corsOptions": {
+        "allowedOrigins": [
+            "*"
+        ],
+        "maxAgeInSeconds": 60
+    },
+    "vectorSearch": {
+        "algorithmConfigurations": [
+            {
+                "name": "vectorConfig",
+                "kind": "hnsw"
+            }
+        ]
+    }
+}

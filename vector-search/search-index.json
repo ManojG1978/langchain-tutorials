@@ -1,0 +1,161 @@
+{
+    "@odata.context": "https://ncuseai-search-service.search.windows.net/$metadata#indexes/$entity",
+    "@odata.etag": "\"0x8DB82AF3B78DFA8\"",
+    "name": "langchain-vector-demo",
+    "defaultScoringProfile": null,
+    "fields": [
+    {
+        "name": "id",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true,
+        "key": true,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": null,
+        "vectorSearchConfiguration": null,
+        "synonymMaps": []
+    },
+    {
+        "name": "category",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": null,
+        "vectorSearchConfiguration": null,
+        "synonymMaps": []
+    },
+    {
+        "name": "title",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": null,
+        "vectorSearchConfiguration": null,
+        "synonymMaps": []
+    },
+    {
+        "name": "titleVector",
+        "type": "Collection(Edm.Single)",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": 1536,
+        "vectorSearchConfiguration": "vectorConfig",
+        "synonymMaps": []
+    },
+    {
+        "name": "content",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": null,
+        "vectorSearchConfiguration": null,
+        "synonymMaps": []
+    },
+    {
+        "name": "content_vector",
+        "type": "Collection(Edm.Single)",
+        "searchable": true,
+        "filterable": false,
+        "retrievable": true,
+        "sortable": false,
+        "facetable": false,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": 1536,
+        "vectorSearchConfiguration": "vectorConfig",
+        "synonymMaps": []
+    },
+    {
+        "name": "metadata",
+        "type": "Edm.String",
+        "searchable": true,
+        "filterable": true,
+        "retrievable": true,
+        "sortable": true,
+        "facetable": true,
+        "key": false,
+        "indexAnalyzer": null,
+        "searchAnalyzer": null,
+        "analyzer": null,
+        "normalizer": null,
+        "dimensions": null,
+        "vectorSearchConfiguration": null,
+        "synonymMaps": []
+    }
+    ],
+    "scoringProfiles": [],
+    "corsOptions": {
+        "allowedOrigins": [
+        "*"
+        ],
+        "maxAgeInSeconds": 60
+    },
+    "suggesters": [],
+    "analyzers": [],
+    "normalizers": [],
+    "tokenizers": [],
+    "tokenFilters": [],
+    "charFilters": [],
+    "encryptionKey": null,
+    "similarity": {
+        "@odata.type": "#Microsoft.Azure.Search.BM25Similarity",
+        "k1": null,
+        "b": null
+    },
+    "semantic": null,
+    "vectorSearch": {
+        "algorithmConfigurations": [
+        {
+            "name": "vectorConfig",
+            "kind": "hnsw",
+            "hnswParameters": {
+                "metric": "cosine",
+                "m": 4,
+                "efConstruction": 400,
+                "efSearch": 500
+            }
+        }
+        ]
+    }
+}
